@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="user-options">
+            <div>Hi, <span id="name"></span></div>
+            <div id="change-name">change name</div>
+        </div>
+
+        <form id="message-form">
+            <input type="text" id="message-input" placeholder="Enter your message" required>
+            <button class="orange-button">Send</button>
+        </form>
+
+        <div id="messages">
+        </div>
+
+        <button id="clear" class="purple-button">Clear All Messages</button>
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+
+</html>

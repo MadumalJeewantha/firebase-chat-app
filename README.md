@@ -1,0 +1,1 @@
+Basic chat application using firebase-firestore
